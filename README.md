@@ -1,1 +1,1 @@
-Welcome to the DSAO
+Welcome to the DSAO of the European Blockchain Assosiation e.V.
