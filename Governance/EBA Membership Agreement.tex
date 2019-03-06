@@ -1,6 +1,10 @@
 \documentclass{article}
 \usepackage{longtable}
 \usepackage[textwidth=14cm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\newsavebox\TBox
 
 \begin{document}
 
@@ -11,8 +15,7 @@
 \vspace{0.8cm}
 
 
-THIS MEMBERSHIP AGREEMENT (the "Agreement") is effective as of this \_\_\_\_\_
-day of \_\_\_\_\_\_\_\_\_\_\_\_\_, 20\_\_\_ (the “Effective Date”) by and between the European Blockchain Association (the “European Blockchain Association”) and Member \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_(“Member”). Members of the European Blockchain Association shall be referred to collectively as the “Membership At-Large”. \\
+THIS MEMBERSHIP AGREEMENT (the "Agreement") is effective as of this \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=0.5cm]{day} of \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=3cm]{ the month}, \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=1cm]{in} (the “Effective Date”) by and between the European Blockchain Association (the “European Blockchain Association”) and \\ \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=4.5cm]{Member: } (“Member”). Members of the European Blockchain Association shall be referred to collectively as the “Membership At-Large”. \\
 \textbf{WHEREAS}, the European Blockchain Association (EBA) combines, synchronizes and leverages blockchain-related activities of European corporations, startups, venture capitalists, and scientific institutes. 
 \textbf{WHEREAS}, the EBA serves as a superior, neutral body to aggregate and coordinate blockchain activities throughout Europe and to provide Non-European parties with a direct API into the European blockchain ecosystem;
 \textbf{WHEREAS}, the European Blockchain Association has adopted bylaws calling for the creation of Membership Classes, as defined, and setting forth a governance structure (the “Bylaws”, attached to the Membership Agreement in \underline{Appendix 3: Bylaws});
@@ -29,8 +32,8 @@ NOW THEREFORE, the European Blockchain Association agrees to admit Member on the
 	Startup: 2.500,- \newline Small: 15.000,- (\textless 50 staff) \newline Medium: 25.000,- (50 - 250 			staff)\newline Large: 50.000,- (\textgreater 250 staff)\newline Consulting Firms: 25.000,- \\
 	\hline
 		\textbf{1b) FULL MEMBERS w. Voting Rights Natural persons} & 2.500,- p.p. \\                                                                                                             	\hline
-		\textbf{2a) FULL ACADEMIC MEMBERS w. Voting Rights - Legal entities (Universities, Professorships)} & 2.500,- p.p. \\                                                                                                             	\hline
-		\textbf{2b) FULL ACADEMIC MEMBERS w. Voting Rights - Natural persons} & 2.500,- \\                                                                                                             	\hline
+		\textbf{2a) FULL ACADEMIC MEMBERS w. Voting Rights - Legal entities (Universities, Professorships)} & 2.500,- \\                                                                                                             	\hline
+		\textbf{2b) FULL ACADEMIC MEMBERS w. Voting Rights - Natural persons} & 2.500,-  p.p. \\                                                                                                             	\hline
 		\textbf{3a) HONORARY MEMBERS without Voting Rights - Legal entities} & No Membership Fees \\                                                                                                             	\hline
 		\textbf{3b) 3b) HONORARY MEMBERS without Voting Rights Natural persons} & No Membership Fees \\                                                                                                            
 	\hline
@@ -245,120 +248,119 @@ All Members including Members serving on the Board of Directors agree to binding
 	\hline
  	   \textbf{Membership Classes} & \textbf{Membership Fees per year, in Euros} & \textbf{Check to indicate desired level of Membership} \\ \hline\hline
  	   \textbf{1a) FULL MEMBERS w. Voting Rights - Legal entities (Startups, Corporations etc.)} &
-	Startup: 2.500,- \newline Small: 15.000,- (\textless 50 staff) \newline Medium: 25.000,- (50 - 250 			staff)\newline Large: 50.000,- (\textgreater 250 staff)\newline Consulting Firms: 25.000,- &  \\
+	Startup: 2.500,- \newline Small: 15.000,- (\textless 50 staff) \newline Medium: 25.000,- (50 - 250 			staff)\newline Large: 50.000,- (\textgreater 250 staff)\newline Consulting Firms: 25.000,- & \CheckBox[width=2em,bordercolor={white}, backgroundcolor=gray!20]{Class 1a } \\
 	\hline
-		\textbf{1b) FULL MEMBERS w. Voting Rights Natural persons} & 2.500,- p.p. & \\                                                                                                             	\hline
-		\textbf{2a) FULL ACADEMIC MEMBERS w. Voting Rights - Legal entities (Universities, Professorships)} & 2.500,- p.p. & \\                                                                                                             	\hline
-		\textbf{2b) FULL ACADEMIC MEMBERS w. Voting Rights - Natural persons} & 2.500,- &  \\                                                                                                             	\hline
-		\textbf{3a) HONORARY MEMBERS without Voting Rights - Legal entities} & No Membership Fees &  \\                                                                                                             	\hline
-		\textbf{3b) 3b) HONORARY MEMBERS without Voting Rights Natural persons} & No Membership Fees & \\                                                                                                            
+		\textbf{1b) FULL MEMBERS w. Voting Rights Natural persons} & 2.500,- p.p. & \CheckBox[width=2em,bordercolor={white}, backgroundcolor=gray!20]{Class 1b} \\                                                                                                             	\hline
+		\textbf{2a) FULL ACADEMIC MEMBERS w. Voting Rights - Legal entities (Universities, Professorships)} & 2.500,- & \CheckBox[width=2em,bordercolor={white}, backgroundcolor=gray!20]{Class 2a} \\                                                                                                             	\hline
+		\textbf{2b) FULL ACADEMIC MEMBERS w. Voting Rights - Natural persons} & 2.500,-  p.p. & \CheckBox[width=2em,bordercolor={white}, backgroundcolor=gray!20]{Class 2b}  \\                                                                                                             	\hline
+		\textbf{3a) HONORARY MEMBERS without Voting Rights - Legal entities} & No Membership Fees & \CheckBox[width=2em,bordercolor={white}, backgroundcolor=gray!20]{Class 3a} \\                                                                                                             	\hline
+		\textbf{3b) 3b) HONORARY MEMBERS without Voting Rights Natural persons} & No Membership Fees & \CheckBox[width=2em,bordercolor={white},backgroundcolor=gray!20]{Class 3b} \\                                                                                                            
 	\hline
 \end{longtable}
 
 BE SURE TO PLACE A CHECK IN THE TABLE ABOVE INDICATING YOUR DESIRED LEVEL OF MEMBERSHIP \\
 
 The Fees may be amended from time to time in accordance with the Bylaws and shall, from the date of such amendment, replace the previously existing Fees. Any such change shall not require re-execution of this Agreement. 
-If such amendment has been duly approved, Member agrees to payment of such Fees.
+If such amendment has been duly approved, Member agrees to payment of such Fees. \\
+
+Annual Membership dues are levied on a yearly basis. 
+Following acceptance and signing of this agreement, members will be billed for the membership dues selected in the table above and will be billed for membership dues on a recurring basis thereafter. \\
+
+Important: Annual Membership dues for natural persons may be waived on an individual basis subject to approval by the EBA board of directors. 
+Legal entities are generally not eligible for such waivers. 
+Natural persons may apply for a fee waiver on the basis of a commitment to make in-kind contributions to the EBA in lieu of paying the Annual Membership dues. 
+If granted, fee waivers are issued on a one-year renewable basis. \\
+
+
+\CheckBox[width=2em,bordercolor={white},backgroundcolor=gray!20]{I petition the EBA board of directors to waive my annual membership dues for one year from the date of this agreement. I commit to make in-kind contributions to the EBA in in lieu of paying the Annual Membership dues within one year.}
 	
 \newpage
-\textbf{Legal Entities (ONLY Membership Type 1a, 2a, 3a)}
-\begin{longtable}{| p{.35\textwidth} | p{.65\textwidth} |}
-	\hline
-	\newline 
-	\textbf{Name of the Institution} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Address} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Country} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Attention} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Name of the Representative} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Title of the Representative} \newline & \\
-	\hline	
-	\newline 
-	\textbf{E-Mail} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Telephone} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Ethereum Address} \newline & \\
-	\hline	
-\end{longtable}
-\vspace{1cm}
 
+\begin{Form}
+	\section*{Legal Entities (ONLY Membership Type 1a, 2a, 3a)} 
+	
+	\sbox\TBox{Name (Institution): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Name (Institution): \strut}\\[1ex] \\
+	\sbox\TBox{Address (Institution): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Address (Institution): \strut}\\[1ex] \\
+	\sbox\TBox{Country (Institution): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Country (Institution): \strut}\\[1ex] \\
+	\sbox\TBox{Attention (Institution): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Attention (Institution): \strut}\\[1ex] \\
+	\sbox\TBox{Name of the Representative1: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Name of the Representative: \strut}\\[1ex] \\
+	\sbox\TBox{Title of the Representative1: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Title of the Representative: \strut}\\[1ex] \\
+    \sbox\TBox{E-Mail of the Representative: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{E-Mail of the Representative: \strut}\\[1ex] \\
+    \sbox\TBox{Telephone of the Representative: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Telephone of the Representative: \strut}\\[1ex] \\
+	\sbox\TBox{Ethereum Address (Institution): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Ethereum Address (Institution): \strut}\\[1ex] \\
+    
+\end{Form}
+
+\vspace{2cm}
 
 By signing this document, you agree that you have read the bylaws and agree with the governance process of the European Blockchain Association e. V.
 
+\vspace{3cm}
+
+\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=5cm]{Location: }; \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=5cm]{Date: }
+
 \vspace{2cm}
 
-Location, Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-\vspace{2cm}
-
-Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 \newpage
 
-\textbf{Natural Person (ONLY Membership Type 1b, 2b, 3b)}
-\begin{longtable}{| p{.35\textwidth} | p{.65\textwidth} |}
-	\hline
-	\newline 
-	\textbf{Name and Surname} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Address} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Country} \newline & \\
-	\hline
-	\newline 
-	\textbf{E-Mail} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Telephone} \newline & \\
-	\hline
-	\newline 
-	\textbf{GitHub Username (for Developers only} \newline & \\
-	\hline	
-	\newline 
-	\textbf{Ethereum Address} \newline & \\
-	\hline	
-\end{longtable}
-\vspace{3cm}
+\begin{Form}
+	\section*{Natural Persons (ONLY Membership Type 1b, 2b, 3b)} 
+	
+	\sbox\TBox{Name: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Name: \strut}\\[1ex] \\
+	\sbox\TBox{Address: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Address: \strut}\\[1ex] \\
+	\sbox\TBox{Country: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Country: \strut}\\[1ex] \\
+	\sbox\TBox{E-Mail: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{E-Mail: \strut}\\[1ex] \\
+	\sbox\TBox{Telephone: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Telephone: \strut}\\[1ex] \\
+	\sbox\TBox{GitHub Username (Developers only): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{GitHub Username (Developers only): \strut}\\[1ex] \\
+	\sbox\TBox{Ethereum Address: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Ethereum Address: \strut}\\[1ex]
+        
+\end{Form}
 
+\vspace{2cm}
 
 By signing this document, you agree that you have read the bylaws and agree with the governance process of the European Blockchain Association e. V.
 
+\vspace{5cm}
+
+\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=5cm]{Location;}; \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=5cm]{Date;}
+
 \vspace{2cm}
 
-Location, Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-\vspace{2cm}
-
-Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\	
 
 
 
