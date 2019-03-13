@@ -1,0 +1,7 @@
+title Governance Improvement Proposal
+
+note over EBA Member:Governance Code is \navailable on GitHub
+EBA Member<-Governance Code:Member forks Governance Code
+EBA Member->General Member Assembly:Member modifies code and makes pull request with EBA Improvement Proposal (EBAIP)
+General Member Assembly->GitHub Admin:Voting accepts OR declines EBAIP
+GitHub Admin->Governance Code: Merge accepted code of EBAIP

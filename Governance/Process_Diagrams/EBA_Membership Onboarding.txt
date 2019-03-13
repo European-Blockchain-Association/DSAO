@@ -1,0 +1,26 @@
+title EBA Membership Onboarding
+
+note over EBA Member:Member signs \nMembership Agreement
+EBA Member->eublas.org:Personal Information, GitHub Name, \nETH-Address, Membership Agreement (MA)
+eublas.org->EBA Member:Double opt-in E-Mail
+EBA Member->eublas.org: Confirmation-click in E-Mail
+eublas.org->EBA Admin:Check & validate MA
+EBA Admin->EBA Member:Send bill if applicable (sent 30 days before due date)
+EBA Member->Banking:Payment
+Banking->EBA Admin:Payment confirmation
+EBA Admin->eublas.org:Set Membership Status to \n'active' till date + 1 year
+eublas.org->EBA Member:E-Mail notifies member
+note over EBA Member:Process if member doesn't \npay starts here:
+Banking->EBA Admin:Reminder for outstanding bill
+EBA Admin->EBA Member:1st Warning to pay the bill (when 30 days late)
+EBA Member->Banking:Payment
+Banking->EBA Admin:Payment confirmation
+EBA Admin->eublas.org:Set Membership Status to \n'active' till date + 1 year
+eublas.org->EBA Member:E-Mail notifies member
+note over EBA Member:Process if no payment occured \nafter the reminder
+EBA Admin->EBA Member:1st Warning to pay the bill (when 30 days late)
+EBA Admin->EBA Member:2nd Warning to pay the bill \n(at 60 days latesent with notice of interest accruing\nWarning that membership will be terminated at 90 days)
+EBA Admin->eublas.org:After 90 days of no payment:\nSet membership status to 'inactive'
+eublas.org->EBA Member:Notification via E-Mail
+EBA Admin->GitHub Admin: Request removal from GitHub Organization
+GitHub Admin->EBA Member:Member GitHub removal notification
