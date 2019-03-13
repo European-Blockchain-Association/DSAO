@@ -1,0 +1,14 @@
+title EBA Member GitHub Onboarding
+
+note over EBA Member:Member provided GitHub Username \nin the Membership Agreement
+GitHub Admin->EBA Member:GitHub EBA Organization invite
+
+EBA Member->GitHub Organization:Member accepts Github invitation
+EBA Member->EBA Board: WG or EWGE charter proposal
+EBA Board->EBA Member: Inform Member of charter approval
+EBA Board->GitHub Admin:Inform GitHub Admin of charter approval
+GitHub Admin->WGs Maintainer:creates WG, specify maintainer, adds charter to WG description
+EBA Member<->WG Team Maintainer:Member requests WG Membership OR Maintainer invites Member
+EBA Member<->WG Team Maintainer:Approves invitation or creates new WG Team
+WG Team Maintainer->Code Repo:Creates Code Repository
+EBA Member->Code Repository: Member contributes code
