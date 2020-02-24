@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[textwidth=14cm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\newsavebox\TBox
+\usepackage{enumitem,amssymb}
+
+
+
+\begin{document}
+\newlist{options}{itemize}{2}
+\setlist[options]{label=$\square$}
+
+
+{\scshape\LARGE EUROPEAN BLOCKCHAIN ASSOCIATION \centering \par}
+\vspace{0.4cm}
+{\huge\bfseries MEMBERSHIP AGREEMENT \centering \par}
+\vspace{0.4cm}
+{\scshape\LARGE Membership Extension \centering \par}
+\vspace{0.8cm}
+
+
+THIS MEMBERSHIP EXTENSION (the "Extension") is effective as of the first day following the last day of the member's previous membership period (the “Effective Date”) and is agreed between the European Blockchain Association (the “European Blockchain Association”) and \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=4.5cm]{Member: } (“Member”). Members of the European Blockchain Association shall be referred to collectively as the “Membership At-Large”. \\
+
+\subsection*{Membership Options}
+Please select whether you want to maintain or terminate your membership below.  If you elect to remain a member you must either pay the membership dues or commit to in-kind contributions in lieu of said dues. If you want to request a fee waiver on the basis of your community contributions, select the box for "Optional Fee Waiver". Members not contributing on an in-kind basis will be subsequently billed according to their membership class as given in Appendix A: \\ 
+
+\begin{options}
+    \item \textbf{Maintain Membership:} For the next and following membership periods, the member will be a member of the \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=1cm] {class: }  according to the membership classes in Appendix A. \\
+     \item \textbf{Optional Fee Waiver Petition:} The member petitions the EBA board of directors to waive the annual membership dues for one year from the first day after the last day of the member's previous membership period. The member commits to make in-kind contributions to the EBA in in lieu of paying the Annual Membership dues within one year. 
+    \item \textbf{Terminate Membership:} The member wants to terminate the EBA membership by the end of the current membership period.
+\end{options}
+
+If a member requests a fee waiver, the EBA Board of Directors will determine eligibility of the member to waive the annual membership fees based on their past and planned EBA contributions. The member will be promptly notified of the board decision.
+
+\newpage
+
+\begin{Form}
+	\section*{Legal Entities (ONLY Membership Type 1a, 2a, 3a)} 
+	
+	\sbox\TBox{Name (Institution): }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Name (Institution): \strut}\\[1ex] \\
+	\sbox\TBox{Name of the Representative1: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Name of the Representative: \strut}\\[1ex] \\
+    
+\end{Form}
+
+\begin{Form}
+	\section*{Natural Persons (ONLY Membership Type 1b, 2b, 3b)} 
+	
+	\sbox\TBox{Name: }%
+	\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=\dimexpr\linewidth-\wd\TBox]%
+	{Name: \strut}\\[1ex] \\
+        
+\end{Form}
+
+\vspace{4cm}
+
+By signing this document, the member agrees that he or she has read the Bylaws and agrees with the governance process of the European Blockchain Association e. V.
+
+\vspace{5cm}
+
+\TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=5cm]{Location;} \TextField[backgroundcolor=gray!20,borderwidth=0,bordercolor={white},width=5cm]{Date;}
+
+\vspace{2cm}
+
+Signature: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\	
+
+\newpage
+
+\section*{Appendix A: Membership classes}
+
+There shall be six (6) classes of Membership (“Membership Classes”) in the European Blockchain Association representing Members that publicly, but non-exclusively, support the Purposes of the European Blockchain Association as specified in the Bylaws:
+	
+\begin{longtable}{| p{.55\textwidth} | p{.45\textwidth} |}
+	\hline
+ 	   \textbf{Membership Classes} & \textbf{Membership Fees per year, in Euros} \\ \hline\hline
+ 	   \textbf{1a) FULL MEMBERS w. Voting Rights - Legal entities (Startups, Corporations etc.)} &
+	Startup: 2.500,- \newline Small: 15.000,- (\textless 50 staff) \newline Medium: 25.000,- (50 - 250 			staff)\newline Large: 50.000,- (\textgreater 250 staff)\newline Consulting Firms: 25.000,- \\
+	\hline
+		\textbf{1b) FULL MEMBERS w. Voting Rights Natural persons} & 2.500,- p.p. \\                                                                                                             	\hline
+		\textbf{2a) FULL ACADEMIC MEMBERS w. Voting Rights - Legal entities (Universities, Professorships)} & 2.500,- \\                                                                                                             	\hline
+		\textbf{2b) FULL ACADEMIC MEMBERS w. Voting Rights - Natural persons} & 2.500,-  p.p. \\                                                                                                             	\hline
+		\textbf{3a) HONORARY MEMBERS without Voting Rights - Legal entities} & No Membership Fees \\                                                                                                             	\hline
+		\textbf{3b) 3b) HONORARY MEMBERS without Voting Rights Natural persons} & No Membership Fees \\                                                                                                            
+	\hline
+\end{longtable}
+
+For more information about the membership classes, please read the EBA Membership Agreement \footnote{\url{http://bit.ly/EBA-Membership-Agreement}}.
+
+\end{document}
